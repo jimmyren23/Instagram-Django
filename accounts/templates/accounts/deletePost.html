@@ -1,0 +1,12 @@
+{% extends 'accounts/main.html' %}
+{% load static %}
+{% block content %}
+
+<h3> Are you sure you want to submit? </h3>
+
+<form method="POST">
+    {% csrf_token %}
+    <a href="{% url 'home' %}"> Cancel </a> 
+    <input type = "submit" name = "confirm">
+</form>
+{% endblock content%}

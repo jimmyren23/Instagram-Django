@@ -1,0 +1,41 @@
+{% extends 'accounts/main.html' %}
+{% load static %}
+
+<link rel="stylesheet" type="text/css" href="{% static '/css/main.css' %}">
+{% block content %}
+<div class = "user">
+    <h1> {{request.user}}'s Profile</h1>
+</div>
+{% for i in post %}
+    <div class="postimg">
+        {% if i.post_pic %}
+            <img class = "img-responsive" src="{{i.post_pic.url}}">
+        {% endif %}
+    </div>
+    <div class="posttext">
+        <b> {{i.user}}: </b> {{i.content}}
+    </div>
+    <div class = "numlikes">
+        <strong> {{i.liked.all.count}} Likes</strong>
+    </div>
+    <div class = "postmod">
+        <div class = "delete"> 
+            <a href = "{% url 'deletePost' i.id %}" class = "hi"> Delete </a>
+        </div>
+        <div class = "likes">
+            <form action = "{% url 'like_post' %}" method = "POST" class = "ui form">
+                {% csrf_token %} 
+                <input type = 'hidden' name = 'post_id' value = "{{i.id}}">
+                {% if user not in i.liked.all %}
+                        <button type = "submit" class = "ui button positive" id = "like"> Like </button>
+                {% else %}
+                        <button type = "submit" class = "ui button negative" id = "dislike"> Dislike </button>
+                {% endif %}
+            </form>
+        </div>
+    </div>
+{% endfor %}
+
+
+
+{% endblock content%}
