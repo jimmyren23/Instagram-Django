@@ -1,4 +1,4 @@
-# jimmyinstagram2
+# Instagram-Django
 
 Instructions: To run this, you must be in you own updated Python 3 shell and Django 3 to run the server! Everything is run on the most up to date software (as of 6/2/20). Once you run 'python manage.py runserver' when you are at the directory, it should begin to run!
 
