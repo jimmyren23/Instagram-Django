@@ -10,3 +10,8 @@ I'm unsure of any bugs, but I have pretty much tested every feature that I had t
 The assignment was pretty fun to actually do, and it's been a while since I've done much web dev and starting Django for the first time was a blast. 
 
 Jimmy's Instagram: version 1.0
+
+
+
+
+
