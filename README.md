@@ -1,5 +1,16 @@
-# Instagram-Django
+# Instagram-Lite
 
+I created a web application using Django that can securely create accounts, make and delete posts with images and text, and comment and like others’ posts. This stores user and Instagram post information using SQL.
+
+# Motivation
+
+# Technologies Used
+
+# Screen Shots
+
+# Features
+
+# How to Use
 Instructions: To run this, you must be in you own updated Python 3 shell and Django 3 to run the server! Everything is run on the most up to date software (as of 6/2/20). Once you run 'python manage.py runserver' when you are at the directory, it should begin to run!
 
 
