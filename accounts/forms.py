@@ -13,7 +13,7 @@ class ResultsForm(ModelForm):
         model = Post
         fields = ['content', 'post_pic']
         widgets = {
-            'Content': Textarea(attrs={'cols': 80, 'rows': 20}),
+            'content': Textarea(attrs={'cols': 80, 'rows': 20}),
         }
 class CommentForm(ModelForm):
     class Meta:

@@ -1,7 +1,17 @@
-
+.body {
+  background-color: white;
+  font-family: Georgia;
+}
+.container {
+  height: 1000px;
+}
 .heading{
   text-align: center;
-  padding: 20px
+  padding-top: 30px;
+  font-size: 50px;
+  font-family: Arial;
+  font-weight: bold;
+  padding-bottom: 50px;
 }
 .user{
   text-align: center;
@@ -12,9 +22,9 @@ h1{
 }
 
 div.newpost input.sub{
-  background-color:lightblue;
+  background-color:#95bddc;
   border: none;
-  color: white;
+  color: white; 
   padding: 16px 32px;
   text-decoration: none;
   margin: 4px 2px;
@@ -26,31 +36,48 @@ div.newpost input.sub{
   text-align: center;
 }
 .comments{
+  display: flex;
+  flex-direction: column;
+  flex: 1;
   text-align: center;
-  background-color: gray;
+  justify-content: center;
   border-radius: 5px;
-  margin-left: auto;
-  margin-right: auto;
-  width: 40%;
+  width: 100%;
   padding: 20px;
+}
+
+.comment {
+  display: flex;
+  flex: 1;
+  text-align: center;
+  justify-content: center;
+}
+.no-comments {
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  width: 100%;
 
 }
+
 div.addcomment a:link.newcomm, div.addcomment a:visited.newcomm {
-  background-color: lightblue;
+  background-color: #95bddc;
   color: white;
   padding: 14px 25px;
   text-align: center;
+  border-radius: 5px;
   text-decoration: none;
   display: inline-block;
-  border-radius: 5px;
 }
 div.addcomment a:hover.newcomm, div.addcomment a:active.newcomm {
-  background-color: lightblue;
+  background-color: #95bddc;
+  border-radius: 5px;
 }
 
 .addcomment{
   text-align: center;
-  padding: 10px;
+  padding-bottom: 10px;
+  border-radius: 5px;
 }
 
 .posttext{
@@ -61,23 +88,23 @@ div.addcomment a:hover.newcomm, div.addcomment a:active.newcomm {
 .postimg{
   padding: 10px;
   text-align: center;
-  border-radius:5px
+  border-radius:5px;
 }
 .postmod{
   text-align: center;
 }
-ul {
+.navbar-nav {
   text-align: center;
   list-style-position: inside;
 }
 
 div a:link.hi, div a:visited.hi {
-  background-color: #f44336;
+  background-color: #fb4c1f;
   color: white;
   padding: 14px 25px;
   text-align: center;
-  text-decoration: none;
   display: inline-block;
+  text-decoration: none;
   border-radius: 5px;
 }
 
@@ -90,12 +117,15 @@ div a:link.hi, div a:visited.hi {
 }
 
 #like{
-  background-color: green;
+  background-color:#95bddc;
   color: white;
   width: 75px;
   height: 50px;
   border-radius: 5px;
-  
+  border: 0;
+}
+#like:focus {
+  background-color: #c2d1e5;
 }
 
 #dislike{
@@ -105,6 +135,10 @@ div a:link.hi, div a:visited.hi {
   width: 75px;
   height: 50px;
   border-radius: 5px;
+  border: 0;
+}
+#dislike:focus {
+  background-color: #fe793d;
 }
 
 .numlikes{
@@ -116,16 +150,16 @@ div a:link.hi, div a:visited.hi {
 }
 
 div a:hover.hi, div a:active.hi {
-  background-color: red;
+  background-color: #fb4c1f;
 }
-
 
 
 .hello-msg{
     font-size: 18px;
     color: #fff;
     margin-right: 20px;
-  }
+}
+
   * {box-sizing:border-box}
  html, body {
     width: 100%;
@@ -204,22 +238,22 @@ div a:hover.hi, div a:active.hi {
     cursor: pointer;
     height: 15px;
     width: 15px;
-    margin: 0 2px;
-    background-color: #bbb;
+    margin: 10px 2px;
+    background-color: lightgray;
     border-radius: 50%;
     display: inline-block;
     transition: background-color 0.6s ease;
   }
   
   .active, .dot:hover {
-    background-color: #717171;
+    background-color: rgb(53, 59, 63);
   }
   .nav-link{
-    background-color: rgb(53, 59, 63)
+    background-color: #333;
 }
 
 .hello-msg:hover {
-    background-color: #555;
+    background-color: #333;
     color: #f2f2f2;
     padding: 6px 1  px;
     text-decoration: none; 
@@ -242,11 +276,118 @@ div a:hover.hi, div a:active.hi {
     from {opacity: .4}
     to {opacity: 1}
   }
-  
+  /* footer */ 
   .footer {
+    display: flex;
     text-align: center;
-    position: absolute;
+    justify-content: center;
     width: 100%;
+    position: absolute;
+    padding-top: 100px;
+  }
+  .footerText {
+    font-size: 15px;
   }
 
 
+
+
+
+/* Navigation bar */
+.navbar-nav {
+  list-style-type: none;
+  margin: 0;
+  font-weight: bold;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+  font-family: Arial;
+}
+
+li {
+  float: left;
+  border-right:1px solid #333;
+  width: 175px;
+}
+
+li:last-child {
+  border-right: none;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover:not(.active) {
+  background-color: #111;
+}
+
+
+/* gallery */
+.penn-img {
+  width: 100%;
+  height: 600px;
+}
+
+/* No Posts View */
+.no-posts {
+  display: block;
+  text-align: center;
+  font-size: 40px;
+  padding-top: 300px;
+  font-family: Arial;
+}
+/* Create a Post */
+.caption {
+  display:inline-block;
+}
+.photo-add {
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  padding: 25px;
+}
+.photo-submit {
+  display: flex;
+  text-align: center;
+  margin-left: 75px;
+  justify-content: center;
+}
+.submit {
+  display:flex;
+  flex: 1;
+  text-align: center;
+  justify-content: center;
+  padding: 10px;
+}
+
+/* imagePost */
+.img-responsive {
+  height: 600px;
+  width: 400px;
+}
+
+/* Add Comment */
+.submit-comment {
+  display: flex;
+  flex: 1;
+  text-align: center;
+  justify-content: center;
+}
+
+.submit-button {
+  display: flex;
+  flex: 0.05;
+  width: 100px;
+  text-align: center;
+  justify-content: center;
+  padding: 15px;
+  background-color:#95bddc;
+  color: white;
+  border: 0;
+  border-radius: 5px;
+}

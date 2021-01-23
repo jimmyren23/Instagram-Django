@@ -3,8 +3,8 @@
 
 <link rel="stylesheet" type="text/css" href="{% static '/css/main.css' %}">
 {% block content %}
-<div class = "user">
-    <h1> {{request.user}}'s Profile</h1>
+<div class = "heading">
+    {{request.user}}'s Profile
 </div>
 {% for i in post %}
     <div class="postimg">
@@ -34,6 +34,10 @@
             </form>
         </div>
     </div>
+    {% empty %}
+    <div class="no-posts">
+        You have not made any posts yet.
+    <div>
 {% endfor %}
 
 

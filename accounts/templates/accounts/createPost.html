@@ -3,24 +3,27 @@
 <link rel="stylesheet" type="text/css" href="{% static '/css/main.css' %}">
 {% block content %}
 
-<h1> Create a New Post </h1>
+<div class = "heading"> 
+    Create a New Post 
+</div>
 <div class = "newpost">
     <form method = "POST" action="" enctype="multipart/form-data">
         {% csrf_token %}
-        <br>
-        <strong> Write a caption </strong>
-        <br>
-        <br>
-        {{ form.content }}
-        <br>
-        <br>
-        <strong> Pick a picture! </strong>
-        <br>
-        <br>
-        {{ form.post_pic}}
-        <br><br>
-        
-        <input type="submit" class = "sub">
+        <div class = "caption">
+            <strong> Write a caption </strong>
+        <div>    
+        <div class = "caption">
+            {{ form.content }}
+        <div>
+        <div class = "photo-add">
+            <strong> Pick a picture! </strong>
+        </div>
+        <div class = "photo-submit">
+            {{ form.post_pic }}        
+        </div>
+        <div class = "submit">
+            <input type="submit" class = "sub">
+        </div>
     </form>
 </div>
 

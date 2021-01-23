@@ -1,10 +1,9 @@
 {% extends 'accounts/main.html' %}
 {% load static %}
-
-<link rel="stylesheet" type="text/css" href="{% static '/css/main.css' %}">
+<link rel="stylesheet" type="text/css" href="{% static '/css/allPosts.css' %}">
 {% block content %}
     <div class = "heading">
-        <h2> Feed </h2>
+        Feed 
     </div>
     {% for i in post %}
         <div class="postimg">
@@ -30,20 +29,23 @@
             </form>
         </div>
         <div class = "comments">
-            <p> Comments: </p>
-            <ul>
             {% for comment in i.comments.all %}
                 <div class="comment">
-                    <li><strong>{{ comment.user }}: </strong> {{ comment.text}}</li>
+                    <strong>{{ comment.user }}: </strong> {{ comment.text}}
                 </div>
                 {% empty %}
+                <div class = "no-comments"
                     <p>No comments here yet!</p>
+                </div>
             {% endfor %}
-            </ul>
         </div>
         <div class = "addcomment">
             <a class = "newcomm" href="{% url 'add_comment_to_post' pk=i.pk %}">Add comment</a>
         </div>
+    {% empty %}
+    <div class="no-posts">
+        There are no posts made yet
+    <div>
     {% endfor %}
 
 {% endblock%}

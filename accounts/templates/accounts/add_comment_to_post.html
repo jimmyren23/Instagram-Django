@@ -1,5 +1,19 @@
-<h1>New comment</h1>
+{% extends 'accounts/main.html' %}
+{% load static %}
+
+<link rel="stylesheet" type="text/css" href="{% static '/css/main.css' %}">
+{% block content %}
+    <div class="heading"> 
+        New Comment 
+    </div>
     <form method="POST" class="post-form">{% csrf_token %}
-        {{ form.as_p }}
-        <button type="submit" class="save btn btn-default">Send</button>
+        <div class = "addcomment">
+            {{ form.as_p }}
+        </div>
+        <div class = "submit-comment">
+            <button type="submit" class="submit-button"> Add </button>
+        </div>
     </form>
+
+
+{% endblock content%}
