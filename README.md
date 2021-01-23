@@ -11,11 +11,10 @@ I wanted to work with Django and create a basic program that allowed me to work 
 Django, CSS, HTML, and JavaScript
 
 # Screen Shots
-![Home Page](https://user-images.githubusercontent.com/40722259/105573205-7b5e1780-5d21-11eb-9408-b237247b01f3.png)
 ![Login Page](https://user-images.githubusercontent.com/40722259/105573196-739e7300-5d21-11eb-89bf-1a4ab32b521e.png)
+![Home Page](https://user-images.githubusercontent.com/40722259/105573205-7b5e1780-5d21-11eb-9408-b237247b01f3.png)
 ![Feed Page](https://user-images.githubusercontent.com/40722259/105573202-78fbbd80-5d21-11eb-92e5-f644cc5b4cec.png)
 ![My Posts Page](https://user-images.githubusercontent.com/40722259/105573200-7600cd00-5d21-11eb-8c44-a9e6027fb6bd.png)
-# Features
 
 # How to Use
 Instructions: To run this, you must be in you own updated Python 3 shell and Django 3 to run the server! Everything is run on the most up to date software (as of 1/22/21). Once you run 'python manage.py runserver' when you are at the directory, it should begin to run!
