@@ -4,7 +4,7 @@ I created a web application using Django that can securely create accounts, make
 
 # Motivation
 
-I wanted to work with Django and create a basic program that allowed me to work with MySQL and web programming.
+This is my fake verison of instagram! I wanted to work with Django and create a basic program that allowed me to work with MySQL and web programming.
 
 # Technologies Used
 
@@ -20,7 +20,12 @@ Django, CSS, HTML, and JavaScript
 Instructions: To run this, you must be in you own updated Python 3 shell and Django 3 to run the server! Everything is run on the most up to date software (as of 1/22/21). Once you run 'python manage.py runserver' when you are at the directory, it should begin to run!
 
 # Features
-This is my fake verison of instagram! I have implemeneted the basic features such as adding posts, letting user's create an account, viewing your own or all posts, etc. I have also added on some css style pages, with some of the code being taken from w3-schools. While I didn't really style it the exact way I wanted to with some lacking of documentation, I focused on getting more features on the program such as having a forgot password section, adding likes, letting users upload images with their posts, and having users being able to comment on other's images. 
+I have implemented the basic features such as:
+  - adding posts with pictures and captions
+  - letting user's create an account with password resets
+  - viewing your own or all posts
+  - adding likes and comments
+  - deleting posts
 
 I'm unsure of any bugs, but I have pretty much tested every feature that I had to see if anything would be buggy.
 
