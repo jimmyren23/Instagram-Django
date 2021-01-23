@@ -11,7 +11,7 @@ I wanted to work with Django and create a basic program that allowed me to work 
 Django, CSS, HTML, and JavaScript
 
 # Screen Shots
-![Login Page](https://user-images.githubusercontent.com/40722259/105573196-739e7300-5d21-11eb-89bf-1a4ab32b521e.png)
+![Login Page](https://user-images.githubusercontent.com/40722259/105573263-df80db80-5d21-11eb-9491-3ed7404e81f4.png)
 ![Home Page](https://user-images.githubusercontent.com/40722259/105573205-7b5e1780-5d21-11eb-9408-b237247b01f3.png)
 ![Feed Page](https://user-images.githubusercontent.com/40722259/105573202-78fbbd80-5d21-11eb-92e5-f644cc5b4cec.png)
 ![My Posts Page](https://user-images.githubusercontent.com/40722259/105573200-7600cd00-5d21-11eb-8c44-a9e6027fb6bd.png)
